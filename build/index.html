@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      a,
+      button,
+      input {
+        text-decoration: none;
+        color: inherit;
+        border: 0;
+        outline: 0;
+      }
+      .logo-img {
+        width: 15%;
+      }
+      .delete-img {
+        width: 40px;
+      }
+      section {
+        position: relative;
+      }
+      .arrow {
+        position: absolute;
+        right: 15px;
+        top: 30px;
+      }
+      img {
+        object-fit: cover;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      ul li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="d-flex justify-content-between align-items-center border-bottom fixed-top text-bg-light"
+    >
+      <div class="left_logo d-flex">
+        <img src="./image/logo.webp" alt="logo" class="logo-img" />
+        <span class="fs-4 my-auto">Bites</span>
+      </div>
+      <div
+        class="right d-flex justify-content-between align-items-center me-4 w-50"
+      >
+        <div class="right_menu">
+          <a href="#aboutus" class="me-4 h5">About Us</a>
+          <a href="#menu" class="me-4 h5">Menu</a>
+          <a href="#resev" class="me-4 h5">Reservation</a>
+          <a href="#chef" class="me-4 h5">Chef</a>
+          <a href="#footer" class="me-4 h5">Contacts</a>
+        </div>
+        <div class="right_button me-4">
+          <button
+            class="p-2 btn btn-outline-warning rounded-circle me-3 delete-img"
+          >
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+          <button class="px-3 btn btn-warning rounded-pill">
+            Reserve Table
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main d-flex mt-5 pt-5 p-4">
+      <div class="left_main m-auto ms-5">
+        <h1 class="display-2 w-75">We Serve The Test You Love</h1>
+        <p class="w-75 my-3">
+          This is a type of restaurant which typically serves food and drinks,
+          in addition to light refreshments such as baked goods or snacks. The
+          term comes from the rench word meaning food.
+        </p>
+        <div class="left_main_button">
+          <button class="px-3 btn btn-warning rounded-pill me-2">
+            Explore Food
+          </button>
+          <button class="px-3 btn btn-outline-warning rounded-pill">
+            <i class="fa-solid fa-magnifying-glass me-1"></i> Search
+          </button>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="./image/about-img.png" alt="" class="w-100" />
+      </div>
+    </section>
+
+    <section class="popularDishes p-4">
+      <h1 class="">Popular Dishes</h1>
+      <div class="arrow">
+        <button class="btn btn-outline-warning rounded-pill">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn btn-warning rounded-pill">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="dishes_name my-3 row">
+        <div
+          class="dish w-25 text-black text-center p-3 rounded mx-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-1.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>Pasta is type of food typically made from an unleavened dough</p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$35.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded mx-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-2.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            A hamburger is a food consisting of fillings—usually a patty of
+            ground meat
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$55.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded mx-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-3.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            Dish of Italian origin, with flat round base of with a topping of
+            tomatoes and cheese
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$45.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded mx-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-6.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            Dish of Italian origin, with flat round base of with a topping of
+            tomatoes and cheese
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$25.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="About_us row p-4">
+      <div class="left_about col ms-5">
+        <img src="./image/banner-3.png" alt="" />
+      </div>
+      <div class="right_about col my-auto">
+        <h1 class="display-3">We Are More Than Multiple Survice</h1>
+        <p class="my-2 w-75">
+          This is a type of restaurant which typically serves food and drinks,
+          in addition to light refreshments such as baked goods or snacks. The
+          term comes from the rench word meaning food.
+        </p>
+        <ul class="services row w-75">
+          <li class="service col-6 fw-bolder">Online Order</li>
+          <li class="service col-6 fw-bolder">Pre-Reservation</li>
+          <li class="service col-6 fw-bolder">24/7 Service</li>
+          <li class="service col-6 fw-bolder">Organized Foodie Place</li>
+          <li class="service col-6 fw-bolder">Clean Kitchen</li>
+          <li class="service col-6 fw-bolder">Super Chefs</li>
+        </ul>
+        <button class="btn btn-warning rounded-pill ms-2">About Us</button>
+      </div>
+    </section>
+
+    <section id="menu" class="menu_pack text-center p-4">
+      <h1 class="display-4">Our Regular Menu Pack</h1>
+      <div class="menu_navb my-3">
+        <button class="btn btn-outline-warning px-4 rounded-pill me-4">
+          Special Foods
+        </button>
+        <button class="btn btn-outline-warning px-4 rounded-pill me-4">
+          Maxican
+        </button>
+        <button class="btn btn-warning px-4 rounded-pill me-4">Italian</button>
+        <button class="btn btn-outline-warning px-4 rounded-pill me-4">
+          Japanese
+        </button>
+        <button class="btn btn-outline-warning px-4 rounded-pill me-4">
+          Drinks
+        </button>
+        <button class="btn btn-outline-warning px-4 rounded-pill me-4">
+          Lunch
+        </button>
+        <button class="btn btn-outline-warning px-4 rounded-pill me-4">
+          More Items +
+        </button>
+      </div>
+      <div class="menu_dish row">
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-8.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            Dish of Italian origin, with flat round base of with a topping of
+            tomatoes and cheese
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$100.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-1.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>Pasta is type of food typically made from an unleavened dough</p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$35.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-2.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            A hamburger is a food consisting of fillings—usually a patty of
+            ground meat
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$40.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-3.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            Dish of Italian origin, with flat round base of with a topping of
+            tomatoes and cheese
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$65.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-4.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            A hamburger is a food consisting of fillings—usually a patty of
+            ground meat
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$15.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-5.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            Dish of Italian origin, with flat round base of with a topping of
+            tomatoes and cheese
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$135.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-6.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>Pasta is type of food typically made from an unleavened dough</p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$50.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="dish w-25 text-black text-center p-3 rounded m-3 col btn btn-outline-light"
+        >
+          <img src="./image/food-7.png" alt="" />
+          <div class="stars my-3">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <p>
+            A hamburger is a food consisting of fillings—usually a patty of
+            ground meat
+          </p>
+          <div class="dish_button d-flex justify-content-between">
+            <h5 class="my-auto">$55.00</h5>
+            <button class="btn btn-outline-warning rounded-pill">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resev" class="reservation p-4 d-flex justify-content-evenly">
+      <div class="left_resev my-auto w-50">
+        <h1 class="display-4">
+          Do You Have Any Dinner Plan Today? Reserve Your Table
+        </h1>
+        <p class="w-75 my-3">
+          Make Online reservation,read restaurant reviews from diners, and earn
+          points towards free meals. OpenTable is a real-time online reservation
+        </p>
+        <button class="btn btn-warning rounded-pill">Make Reservation</button>
+      </div>
+      <div class="right_reserv">
+        <img src="./image/banner-2.png" alt="" class="" />
+      </div>
+    </section>
+
+    <section id="chef" class="Chefs p-4 my-4">
+      <h1 class="display-3">Meet Our Chefs</h1>
+      <div class="arrow">
+        <button class="btn btn-outline-warning rounded-pill">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn btn-warning rounded-pill">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="Chefs_name row p-3">
+        <div class="chef col">
+          <img src="./image/chef-1.webp" alt="" class="w-100 h-100" />
+          <h5 class="text-center mt-3">Ashish Singh</h5>
+        </div>
+        <div class="chef col">
+          <img src="./image/chef-2.jpg" alt="" class="w-100 h-100" />
+          <h5 class="text-center mt-3">Ranveer Brar</h5>
+        </div>
+        <div class="chef col">
+          <img src="./image/chef-3.avif" alt="" class="w-100 h-100" />
+          <h5 class="text-center mt-3">Sanjay Kumar</h5>
+        </div>
+        <div class="chef col">
+          <img src="./image/chef-4.jpeg" alt="" class="w-100 h-100" />
+          <h5 class="text-center mt-3">Anshul Sharma</h5>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="p-4 row text-bg-light border-top">
+      <div class="email col">
+        <h6 class="fw-bold fs-4 w-75">Subscribe Our Newsletter</h6>
+        <input
+          type="email"
+          placeholder="Enter our email"
+          class="border-bottom my-3"
+        />
+        <div class="social_icons">
+          <span class="btn btn-outline-warning rounded-pill text-black me-2">
+            <i class="fa-brands fa-facebook-f"></i>
+          </span>
+          <span class="btn btn-outline-warning rounded-pill text-black me-2">
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+          <span class="btn btn-warning rounded-pill text-black me-2">
+            <i class="fa-brands fa-twitter"></i>
+          </span>
+          <span class="btn btn-outline-warning rounded-pill text-black me-2">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="footer_Service col">
+        <h6 class="fw-bold fs-3 text-dark mb-3">Service</h6>
+        <ul>
+          <a href="#"><li>Online Order</li></a>
+          <a href="#"><li>Pre-Reservation</li></a>
+          <a href="#"><li>24/7 Services</li></a>
+          <a href="#"><li>Foodie Place</li></a>
+          <a href="#"><li>Super place</li></a>
+        </ul>
+      </div>
+      <div class="footer_Service col">
+        <h6 class="fw-bold fs-3 text-dark mb-3">Quick Links</h6>
+        <ul>
+          <a href="#"><li>Menu</li></a>
+          <a href="#"><li>Reviews</li></a>
+          <a href="#"><li>Blogs</li></a>
+          <a href="#"><li>Reserve Table</li></a>
+          <a href="#"><li>Order Foods</li></a>
+        </ul>
+      </div>
+      <div class="footer_Service col">
+        <h6 class="fw-bold fs-3 text-dark mb-3">About</h6>
+        <ul>
+          <a href="#"><li>Our Story</li></a>
+          <a href="#"><li>Benefits</li></a>
+          <a href="#"><li>Career</li></a>
+          <a href="#"><li>Our Chefs</li></a>
+        </ul>
+      </div>
+      <div class="footer_Service col">
+        <h6 class="fw-bold fs-3 text-dark mb-3">Help</h6>
+        <ul>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>Support</li></a>
+          <a href="#"><li>FAQ</li></a>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
